@@ -30,7 +30,7 @@ func (w *Write) Run() (<-chan error, error) {
 			select {
 			case in := <-w.In:
 
-				// Cast to *Ingest.
+				// Cast to *Info.
 				obj, ok := in.(*Info)
 
 				if ! ok {
